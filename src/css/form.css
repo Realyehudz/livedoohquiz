@@ -1,0 +1,97 @@
+.formContainer {
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(-45deg, #B9E3EF, #DFEDCE);
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 800px;
+}
+
+form {
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  max-width: 100%;
+  line-height: 1em;
+  appearance: none;
+  height: 48px;
+  padding: 0 1em;
+  font-size: 1.5rem;
+  color: #1B1742;
+  border: none;
+  border-radius: 10px;
+  background-color: #F6F8FD;
+  transition: all 0.3s ease-out;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px #E9E8ED, inset 0px 1px 3px rgba(193, 191, 205, 0.7);
+  margin: 15px;
+}
+
+.input-checkbox {
+  height: 25px;
+  width: 25px;
+}
+
+label {
+  position: relative;
+  top: -4px;
+  font-family: var(--font);
+  font-size: 25px;
+}
+
+::placeholder {
+  font-family: var(--font);
+  font-size: 15px;
+}
+
+.submit-btn {
+  font-family: var(--font);
+  font-size: 28px;
+  height: 50px;
+  width: 175px;
+  background-color: var(--buttonColor);
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.submit-btn.disabled {
+  pointer-events: none;
+  opacity: .3;
+}
+
+.requiredField {
+  font-size: 13px;
+  margin-left: 23px;
+  color: red;
+}
+
+.endMessage {
+  font-family: var(--font);
+  font-size: var(--headerSize);
+  color: var(--fontDarkColor);
+  text-align: center;
+  max-width: 80%;
+}
+
+.reloadButton {
+  height: 50px;
+  width: 175px;
+  text-align: center;
+  line-height: 50px;
+  background-color: var(--buttonColor);
+  font-size: 20px;
+  font-family: var(--font);
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 50px;
+}

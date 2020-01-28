@@ -1,0 +1,5 @@
+como un juego:
+1. Logo con un slogan un botón de Start
+2. La pregunta con 4 posibles respuestas (como un trivia)
+3. La respuesta correcta (bonus un check verde a la respuesta correcta) y talvez una X a la incorrecta, pero sobre todo enseñar la correct, ya que de allí vamos a empezar la conversación para venderles nuestra plataforma, sin que se sientan mal jaja
+4. Formulario para nombre, email, compañia y checkbox si quieren estar en newsletter
