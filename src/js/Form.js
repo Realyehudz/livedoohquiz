@@ -92,7 +92,7 @@ class Form {
    */
   processAuthRequest(postData) {
     //Auth requierments for mailChimp API conncetion
-    const apiKey = 'd61c482e5f75be326481aaf715e343e1-us4'; // Enter you mailChimp API
+    const apiKey = 'd61c482e5f75be326481aaf715e343e1-us4'; // Enter you mailChimp API key
     const listId = '29f064e332'; // Enter your list you want to add members to.
     const username = 'yeduz'; // this is optional depending on which method you are doing the POST request
 
