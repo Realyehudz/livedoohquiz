@@ -1,13 +1,18 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
 
 module.exports = {
+  // entry:'./src/index.js',
+  // mode: NODE_ENV_ENV,
+  target: 'node',
   devServer: {
     liveReload: true
   },
   watch: true,
     output: {
-        filename: 'bundle.js'
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'bundle.js'
     },
   module: {
     rules: [
