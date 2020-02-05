@@ -5,7 +5,7 @@ const path = require("path");
 module.exports = {
   // entry:'./src/index.js',
   // mode: NODE_ENV_ENV,
-  target: 'node',
+  // target: 'node',
   devServer: {
     liveReload: true
   },
@@ -42,6 +42,7 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"]
       },
+
     ]
   },
   plugins: [
