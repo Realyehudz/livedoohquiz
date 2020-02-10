@@ -95,17 +95,20 @@ class Form {
     const regionName = 'us4'
     const apiKey = 'd61c482e5f75be326481aaf715e343e1-us4'; // Enter you mailChimp API key
     const listId = '29f064e332'; // Enter your list you want to add members to.
-    const username = 'yeduz'; // this is optional depending on which method you are doing the POST request
-    const url = `https://cors-anywhere.herokuapp.com/https://${regionName}.api.mailchimp.com/3.0/lists/${listId}/members/`;
+    const username = 'yeduz'; // this is optional depending on which method you are doing the POST request/
+    // const url = `https://cors-anywhere.herokuapp.com/https://${regionName}.api.mailchimp.com/3.0/lists/${listId}/members/`;
     // const url = `https://${regionName}.api.mailchimp.com/3.0/lists/${listId}/members/`;
+    const serverURL = process.env.PORT || 'http://localhost:5300';
+    const apiPath = '/subscribe';
 
+    const url = serverURL + apiPath;
 
     // Ajax POST request to mailchimp API
 
     const request = new XMLHttpRequest();
     request.open('POST', url);
     request.setRequestHeader('content-type', 'application/json');
-    request.setRequestHeader('Authorization', `Basic ${apiKey}`);
+    // request.setRequestHeader('Authorization', `Basic ${apiKey}`);
     request.send(JSON.stringify(postData));
 
 
