@@ -1,0 +1,16 @@
+.hiddenListContainer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 10%;
+  box-sizing: border-box;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+}
+
+.listItem {
+  font-family: sans-serif;
+  padding: 10px 10px 10px 0;
+}

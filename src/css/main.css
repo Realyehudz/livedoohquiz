@@ -260,6 +260,17 @@ li {
   animation-duration: 1000ms;
 }
 
+.hiddenButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
 
 @media only screen 
     and (device-width : 375px) 

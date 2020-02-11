@@ -4,6 +4,7 @@ import EventManager from '../dist/lib/bean-master/bean.min';
 import SplashScreen from './js/SplashScreen';
 import QuizContainer from './js/QuizContainer';
 import Form from './js/Form';
+import HiddenList from './js/HiddenList';
 
 let quizContainer = new QuizContainer();
 new SplashScreen(quizContainer);
@@ -53,3 +54,12 @@ new SplashScreen(quizContainer);
     }, 2000);
   });
  }
+
+ let hiddenButton = document.createElement('div');
+ hiddenButton.className = 'hiddenButton hidden';
+ document.body.appendChild(hiddenButton);
+
+ EventManager.on(hiddenButton, 'click touchstart', ()=> {
+  let hiddenList = new HiddenList();
+  document.body.appendChild(hiddenList.container);
+ });
